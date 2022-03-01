@@ -1,0 +1,15 @@
+$width: 1440px;
+$height: 900px;
+
+.main {
+    margin: 32px 32px 16px 32px;
+
+    &__header {
+        font-family: Source Sans Pro;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 28px;
+        line-height: 35px;
+        color: #3F3F3F;
+    }
+}
