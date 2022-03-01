@@ -1,5 +1,5 @@
 $width: 1440px;
-$height: 900;
+$height: 900px;
 
 html,
 body {
@@ -13,24 +13,56 @@ body {
 }
 
 .main {
-    margin: 32px 32px 16px 32px;
+    margin: 32px 16px 16px 32px;
+    display: grid;
+    grid-template-columns: 332px * 100 / ($width - 32px * 2) * 1% 1fr;
+    grid-template-rows: 51px 1fr;
 
     &__header {
+        grid-area: 1 / 1 / auto / 3;
         font-family: Source Sans Pro;
         font-style: normal;
         font-weight: 600;
         font-size: 28px;
         line-height: 35px;
         color: #3F3F3F;
+        position: relative;
+
+        &__default {
+            display: flex;
+            position: absolute;
+            top: 0;
+            right: 15.5px;
+            width: 121.5px;
+            height: 36px;
+            background: #FFFEFB;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 15px;
+            color: #B4B4B4;
+            align-items: center;
+            justify-content: center;
+
+            span {
+                transform: rotate(-90deg);
+                margin-left: 5px;
+            }
+        }
+
+        p {
+            margin: 0;
+        }
     }
 
     &__addProduct {
+        grid-area: 'aP';
         background-color: #FFFEFB;
-        width: 332px * 100 / ($width - 32px * 2) * 1%;
-        // width: 332*100/($width - 32px*2);
-        // height: 440*100/($height-32)*1%;
         box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
         border-radius: 4px;
+        height: 440px;
+        min-width: 235px;
 
         &__wrapper {
             padding: 24px;
@@ -38,8 +70,9 @@ body {
             & form {
                 display: flex;
                 flex-direction: column;
+                position: relative;
 
-                & input {
+                .input {
                     margin: 4px 0 16px 0;
                     width: 100%;
                     height: 36px;
@@ -51,6 +84,15 @@ body {
                     border: 1px solid #FFFEFB;
                     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
                     border-radius: 4px;
+                    outline: none;
+
+                    &:focus {
+                        border: 1px solid #34b7df;
+                    }
+                }
+
+                .description {
+                    height: 108px;
                 }
 
                 & button {
@@ -60,6 +102,11 @@ body {
                     border: 1px solid #EEEEEE;
                     border-radius: 10px;
                     color: #B4B4B4;
+
+                    &:hover {
+                        border: 1px solid rgb(29, 197, 29);
+                        background: #d6ffdf;
+                    }
                 }
 
                 & label {
@@ -67,6 +114,7 @@ body {
 
                     span {
                         position: relative;
+
                         span::before {
                             content: '';
                             position: absolute;
@@ -94,4 +142,129 @@ body {
             }
         }
     }
+
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__wrapper {
+            cursor: pointer;
+            background: #FFFEFB;
+            width: 332px;
+            height: 423px;
+            box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+            border-radius: 4px;
+            margin: 0 0 16px 16px;
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                right: -8px;
+                top: -8px;
+                width: 35px;
+                height: 35px;
+                z-index: 999;
+                background: #FF8484;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+                border-radius: 10px;
+                background-image: url('../image/delete.png');
+                background-size: 16px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            img {
+                width: 332px;
+                height: 200px;
+                border-radius: 4px 4px 0px 0px;
+            }
+
+            &__content {
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: 600;
+                color: #3F3F3F;
+                margin: 0 16px;
+
+                p {
+                    margin: 16px 0;
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+
+                div {
+                    margin-bottom: 32px;
+                    font-weight: normal;
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+
+                span {
+                    font-size: 24px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 690px) {
+    .main {
+        grid-template-columns: 100%;
+        grid-template-rows: 51px 1fr 10fr;
+        margin: 32px;
+
+        &__header {
+            grid-area: 1 / 1 / 2 / 2;
+
+            p {
+                font-size: 0.6em;
+            }
+
+            &__default {
+                width: 100px;
+                right: 0;
+            }
+        }
+
+        &__addProduct {
+            width: calc(100% - 1px);
+            min-width: 200px;
+        }
+
+        &__products {
+            margin-top: 16px;
+
+            &__wrapper {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.error {
+    color: #FF8484;
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 10px;
+    letter-spacing: -0.02em;
+}
+
+.errorMargin {
+    margin: 4px 0 6px 0;
+    width: 100%;
+    height: 36px;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #B4B4B4;
+    background: #FFFEFB;
+    border: 1px solid #FFFEFB;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    outline: none;
 }
