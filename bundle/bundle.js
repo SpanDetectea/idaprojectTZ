@@ -1,5 +1,4 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/styles.scss":
@@ -8,6 +7,7 @@
   \*******************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -21,7 +21,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".main {\n  margin: 32px 32px 16px 32px;\n}\n.main__header {\n  font-family: Source Sans Pro;\n  font-style: normal;\n  font-weight: 600;\n  font-size: 28px;\n  line-height: 35px;\n  color: #3F3F3F;\n}", "",{"version":3,"sources":["webpack://./scss/styles.scss"],"names":[],"mappings":"AAGA;EACI,2BAAA;AAFJ;AAII;EACI,4BAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;AAFR","sourcesContent":["$width: 1440px;\r\n$height: 900px;\r\n\r\n.main {\r\n    margin: 32px 32px 16px 32px;\r\n\r\n    &__header {\r\n        font-family: Source Sans Pro;\r\n        font-style: normal;\r\n        font-weight: 600;\r\n        font-size: 28px;\r\n        line-height: 35px;\r\n        color: #3F3F3F;\r\n    }\r\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "html,\nbody {\n  margin: 0;\n  padding: 0;\n  background: #E5E5E5;\n}\n\n.red {\n  color: red;\n}\n\n.main {\n  margin: 32px 32px 16px 32px;\n}\n.main__header {\n  font-family: Source Sans Pro;\n  font-style: normal;\n  font-weight: 600;\n  font-size: 28px;\n  line-height: 35px;\n  color: #3F3F3F;\n}\n.main__addProduct {\n  background-color: #FFFEFB;\n  width: 24.1279069767%;\n  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);\n  border-radius: 4px;\n}\n.main__addProduct__wrapper {\n  padding: 24px;\n}\n.main__addProduct__wrapper form {\n  display: flex;\n  flex-direction: column;\n}\n.main__addProduct__wrapper form input {\n  margin: 4px 0 16px 0;\n  width: 100%;\n  height: 36px;\n  font-weight: normal;\n  font-size: 12px;\n  line-height: 15px;\n  color: #B4B4B4;\n  background: #FFFEFB;\n  border: 1px solid #FFFEFB;\n  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);\n  border-radius: 4px;\n}\n.main__addProduct__wrapper form button {\n  width: 100%;\n  height: 36px;\n  background: #EEEEEE;\n  border: 1px solid #EEEEEE;\n  border-radius: 10px;\n  color: #B4B4B4;\n}\n.main__addProduct__wrapper form label {\n  position: relative;\n}\n.main__addProduct__wrapper form label span {\n  position: relative;\n}\n.main__addProduct__wrapper form label span span::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  width: 4px;\n  height: 4px;\n  background: #FF8484;\n  border-radius: 4px;\n  z-index: 999;\n}\n.main__addProduct__wrapper__text {\n  font-family: Source Sans Pro;\n  font-style: normal;\n  font-weight: normal;\n  font-size: 10px;\n  line-height: 13px;\n  letter-spacing: -0.02em;\n  color: #49485E;\n}", "",{"version":3,"sources":["webpack://./scss/styles.scss"],"names":[],"mappings":"AAGA;;EAEI,SAAA;EACA,UAAA;EACA,mBAAA;AAFJ;;AAKA;EACI,UAAA;AAFJ;;AAKA;EACI,2BAAA;AAFJ;AAII;EACI,4BAAA;EACA,kBAAA;EACA,gBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;AAFR;AAKI;EACI,yBAAA;EACA,qBAAA;EAGA,+EAAA;EACA,kBAAA;AALR;AAOQ;EACI,aAAA;AALZ;AAOY;EACI,aAAA;EACA,sBAAA;AALhB;AAOgB;EACI,oBAAA;EACA,WAAA;EACA,YAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,cAAA;EACA,mBAAA;EACA,yBAAA;EACA,0CAAA;EACA,kBAAA;AALpB;AAQgB;EACI,WAAA;EACA,YAAA;EACA,mBAAA;EACA,yBAAA;EACA,mBAAA;EACA,cAAA;AANpB;AASgB;EACI,kBAAA;AAPpB;AASoB;EACI,kBAAA;AAPxB;AAQwB;EACI,WAAA;EACA,kBAAA;EACA,MAAA;EACA,OAAA;EACA,UAAA;EACA,WAAA;EACA,mBAAA;EACA,kBAAA;EACA,YAAA;AAN5B;AAaY;EACI,4BAAA;EACA,kBAAA;EACA,mBAAA;EACA,eAAA;EACA,iBAAA;EACA,uBAAA;EACA,cAAA;AAXhB","sourcesContent":["$width: 1440px;\r\n$height: 900;\r\n\r\nhtml,\r\nbody {\r\n    margin: 0;\r\n    padding: 0;\r\n    background: #E5E5E5;\r\n}\r\n\r\n.red {\r\n    color: red;\r\n}\r\n\r\n.main {\r\n    margin: 32px 32px 16px 32px;\r\n\r\n    &__header {\r\n        font-family: Source Sans Pro;\r\n        font-style: normal;\r\n        font-weight: 600;\r\n        font-size: 28px;\r\n        line-height: 35px;\r\n        color: #3F3F3F;\r\n    }\r\n\r\n    &__addProduct {\r\n        background-color: #FFFEFB;\r\n        width: 332px * 100 / ($width - 32px * 2) * 1%;\r\n        // width: 332*100/($width - 32px*2);\r\n        // height: 440*100/($height-32)*1%;\r\n        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);\r\n        border-radius: 4px;\r\n\r\n        &__wrapper {\r\n            padding: 24px;\r\n\r\n            & form {\r\n                display: flex;\r\n                flex-direction: column;\r\n\r\n                & input {\r\n                    margin: 4px 0 16px 0;\r\n                    width: 100%;\r\n                    height: 36px;\r\n                    font-weight: normal;\r\n                    font-size: 12px;\r\n                    line-height: 15px;\r\n                    color: #B4B4B4;\r\n                    background: #FFFEFB;\r\n                    border: 1px solid #FFFEFB;\r\n                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);\r\n                    border-radius: 4px;\r\n                }\r\n\r\n                & button {\r\n                    width: 100%;\r\n                    height: 36px;\r\n                    background: #EEEEEE;\r\n                    border: 1px solid #EEEEEE;\r\n                    border-radius: 10px;\r\n                    color: #B4B4B4;\r\n                }\r\n\r\n                & label {\r\n                    position: relative;\r\n\r\n                    span {\r\n                        position: relative;\r\n                        span::before {\r\n                            content: '';\r\n                            position: absolute;\r\n                            top: 0;\r\n                            left: 0;\r\n                            width: 4px;\r\n                            height: 4px;\r\n                            background: #FF8484;\r\n                            border-radius: 4px;\r\n                            z-index: 999;\r\n                        }\r\n                    }\r\n\r\n                }\r\n            }\r\n\r\n            &__text {\r\n                font-family: Source Sans Pro;\r\n                font-style: normal;\r\n                font-weight: normal;\r\n                font-size: 10px;\r\n                line-height: 13px;\r\n                letter-spacing: -0.02em;\r\n                color: #49485E;\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -34,6 +34,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, ".main {\n  margin: 32px 32px 16px 32px
   \*****************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /*
@@ -145,6 +146,7 @@ module.exports = function (cssWithMappingToString) {
   \************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 module.exports = function (item) {
@@ -176,6 +178,7 @@ module.exports = function (item) {
   \**************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
@@ -230,6 +233,7 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
   \****************************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var stylesInDOM = [];
@@ -343,6 +347,7 @@ module.exports = function (list, options) {
   \********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 var memo = {};
@@ -391,6 +396,7 @@ module.exports = insertBySelector;
   \**********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -411,6 +417,7 @@ module.exports = insertStyleElement;
   \**********************************************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -432,6 +439,7 @@ module.exports = setAttributesWithoutAttributes;
   \***************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -511,6 +519,7 @@ module.exports = domAPI;
   \*********************************************************************/
 /***/ ((module) => {
 
+"use strict";
 
 
 /* istanbul ignore next  */
@@ -527,6 +536,35 @@ function styleTagTransform(css, styleElement) {
 }
 
 module.exports = styleTagTransform;
+
+/***/ }),
+
+/***/ "./src/modules/addProduct.js":
+/*!***********************************!*\
+  !*** ./src/modules/addProduct.js ***!
+  \***********************************/
+/***/ ((module) => {
+
+function addProduct() {
+    let div = document.createElement('div');
+    div.classList.add('main__addProduct__wrapper');
+    div.innerHTML = `
+    <form action="">
+    <label class="main__addProduct__wrapper__text">Наименование товара<span class="red"><span></span></span></label>
+    <input type="text" placeholder = "Введите наименование товара">
+    <label class="main__addProduct__wrapper__text">Описание товара</label>
+    <input type="text" placeholder = "Введите описание товара">
+    <label class="main__addProduct__wrapper__text">Ссылка на изображение товара<span class="red"><span></span></span></label>
+    <input type="text" placeholder = "Введите ссылку">
+    <label class="main__addProduct__wrapper__text">Цена товара<span class="red"><span></span></span></label>
+    <input type="text" placeholder = "Введите цену">
+    <button>Добавить товар</button>
+    </form>
+    `;
+    document.querySelector('.main__addProduct').append(div);
+}
+
+module.exports = addProduct;
 
 /***/ })
 
@@ -599,8 +637,9 @@ module.exports = styleTagTransform;
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-// This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
 (() => {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
@@ -608,6 +647,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_styles_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/styles.scss */ "./scss/styles.scss");
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const addProduct = __webpack_require__(/*! ./modules/addProduct */ "./src/modules/addProduct.js");
+
+    addProduct();
+})
 })();
 
 /******/ })()

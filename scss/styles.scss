@@ -1,5 +1,16 @@
 $width: 1440px;
-$height: 900px;
+$height: 900;
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #E5E5E5;
+}
+
+.red {
+    color: red;
+}
 
 .main {
     margin: 32px 32px 16px 32px;
@@ -11,5 +22,76 @@ $height: 900px;
         font-size: 28px;
         line-height: 35px;
         color: #3F3F3F;
+    }
+
+    &__addProduct {
+        background-color: #FFFEFB;
+        width: 332px * 100 / ($width - 32px * 2) * 1%;
+        // width: 332*100/($width - 32px*2);
+        // height: 440*100/($height-32)*1%;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.04), 0px 6px 10px rgba(0, 0, 0, 0.02);
+        border-radius: 4px;
+
+        &__wrapper {
+            padding: 24px;
+
+            & form {
+                display: flex;
+                flex-direction: column;
+
+                & input {
+                    margin: 4px 0 16px 0;
+                    width: 100%;
+                    height: 36px;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 15px;
+                    color: #B4B4B4;
+                    background: #FFFEFB;
+                    border: 1px solid #FFFEFB;
+                    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+                    border-radius: 4px;
+                }
+
+                & button {
+                    width: 100%;
+                    height: 36px;
+                    background: #EEEEEE;
+                    border: 1px solid #EEEEEE;
+                    border-radius: 10px;
+                    color: #B4B4B4;
+                }
+
+                & label {
+                    position: relative;
+
+                    span {
+                        position: relative;
+                        span::before {
+                            content: '';
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            width: 4px;
+                            height: 4px;
+                            background: #FF8484;
+                            border-radius: 4px;
+                            z-index: 999;
+                        }
+                    }
+
+                }
+            }
+
+            &__text {
+                font-family: Source Sans Pro;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 10px;
+                line-height: 13px;
+                letter-spacing: -0.02em;
+                color: #49485E;
+            }
+        }
     }
 }
